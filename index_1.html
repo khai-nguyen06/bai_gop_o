@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <title>Lịch họp công ty</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f8f9fa;
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        table {
+            width: 70%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            border: 1px solid #bdc3c7;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+            font-size: 16px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .highlight {
+            background-color: #e8f8f5;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Lịch họp công ty</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Thứ / Ngày</th>
+                <th>Khung giờ</th>
+                <th>Nội dung cuộc họp</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Thứ Hai: Dùng rowspan="2" để gộp 2 hàng cho cùng 1 ngày -->
+            <tr>
+                <td rowspan="2" class="highlight">Thứ Hai<br>(28/10)</td>
+                <td>08:30 - 09:30</td>
+                <td>Họp giao ban đầu tuần các Trưởng phòng</td>
+            </tr>
+            <tr>
+                <td>14:00 - 15:30</td>
+                <td>Đánh giá tiến độ dự án Website</td>
+            </tr>
+
+            <!-- Thứ Ba: Dùng colspan="2" để gộp 2 cột Giờ + Nội dung cho sự kiện kéo dài cả ngày -->
+            <tr>
+                <td class="highlight">Thứ Ba<br>(29/10)</td>
+                <td colspan="2">Cả ngày: Workshop Đào tạo Kỹ năng Quản lý</td>
+            </tr>
+
+            <!-- Thứ Tư: Dùng rowspan="2" gộp 2 hàng -->
+            <tr>
+                <td rowspan="2" class="highlight">Thứ Tư<br>(30/10)</td>
+                <td>09:00 - 11:30</td>
+                <td>Họp với đối tác chiến lược VNG</td>
+            </tr>
+            <tr>
+                <td>15:00 - 16:30</td>
+                <td>Review thiết kế giao diện sản phẩm mới</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
